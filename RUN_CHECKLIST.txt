@@ -1,0 +1,48 @@
+UPDATED ZIP: /mnt/data/ARtify_project_updated.zip
+SOURCE DOC: /mnt/data/Ink.docx
+
+Runnable checklist (to get this prototype running locally):
+1. Backend
+   - Create and activate a Python virtualenv:
+     python -m venv venv
+     source venv/bin/activate    # macOS/Linux
+     venv\Scripts\activate     # Windows
+   - Install dependencies:
+     pip install -r backend/requirements.txt
+   - Create a `.env` file (contents provided in the ZIP). Update MONGODB_URI and JWT_SECRET.
+   - (Optional) Insert sample data:
+     python backend/insert_sample_data.py
+   - Run the backend:
+     python backend/app.py
+   - Backend will be available at http://localhost:5000
+
+2. Frontend
+   - cd frontend
+   - npm install
+   - Start dev server:
+     npm run dev
+   - Frontend expects backend at http://localhost:5000 (change in frontend/src/utils/api.js if needed)
+
+3. Linter / formatting (recommended)
+   - Install dev tools (in project root):
+     npm install --save-dev eslint prettier eslint-plugin-react eslint-config-prettier
+   - Example .eslintrc.json:
+     {
+       "env": { "browser": true, "es2021": true },
+       "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+       "parserOptions": { "ecmaVersion": 12, "sourceType": "module" },
+       "settings": { "react": { "version": "detect" } },
+       "rules": {}
+     }
+   - Run:
+     npx eslint frontend/src --ext .js,.jsx
+   - Auto-fix:
+     npx eslint frontend/src --ext .js,.jsx --fix
+
+4. Adding .glb 3D models
+   - Upload your .glb files in this chat or place them into frontend/public/models/
+   - After upload, I'll add them to the ZIP and update model paths where necessary.
+
+5. Missing imports found by the basic static scan: 2
+   - frontend/src/App.js imports './components/ARViewer' (expected candidates: frontend/src/components/ARViewer, frontend/src/components/ARViewer.js, frontend/src/components/ARViewer.jsx, frontend/src/components/ARViewer.ts, frontend/src/components/ARViewer.tsx, frontend/src/components/ARViewer/index.js, frontend/src/components/ARViewer/index.jsx)
+   - frontend/src/pages/TryOn.js imports '../components/ARViewer' (expected candidates: frontend/src/components/ARViewer, frontend/src/components/ARViewer.js, frontend/src/components/ARViewer.jsx, frontend/src/components/ARViewer.ts, frontend/src/components/ARViewer.tsx, frontend/src/components/ARViewer/index.js, frontend/src/components/ARViewer/index.jsx)

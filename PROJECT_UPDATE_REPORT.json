@@ -1,0 +1,47 @@
+{
+  "zip_path": "/mnt/data/ARtify_project_updated.zip",
+  "uploaded_doc_path": "/mnt/data/Ink.docx",
+  "added_files": [
+    "frontend/src/main.jsx",
+    "frontend/src/pages/Cart.js",
+    "frontend/src/pages/Orders.js",
+    "frontend/src/pages/Admin.js",
+    "frontend/src/App.css"
+  ],
+  "missing_imports_found_count": 2,
+  "missing_imports_examples": [
+    [
+      "/mnt/data/ARtify/frontend/src/App.js",
+      "./components/ARViewer",
+      [
+        "/mnt/data/ARtify/frontend/src/components/ARViewer",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.js",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.jsx",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.ts",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.tsx",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer/index.js",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer/index.jsx"
+      ]
+    ],
+    [
+      "/mnt/data/ARtify/frontend/src/pages/TryOn.js",
+      "../components/ARViewer",
+      [
+        "/mnt/data/ARtify/frontend/src/components/ARViewer",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.js",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.jsx",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.ts",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer.tsx",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer/index.js",
+        "/mnt/data/ARtify/frontend/src/components/ARViewer/index.jsx"
+      ]
+    ]
+  ],
+  "glb_replacements_count": 0,
+  "notes": [
+    "Added main.jsx and missing pages Cart.js, Orders.js, Admin.js.",
+    "Expanded App.css to a more complete version.",
+    "Performed a basic static check for relative imports and listed missing targets.",
+    "Updated occurrences of .glb references to use /public/models/ prefix; place your .glb files there."
+  ]
+}

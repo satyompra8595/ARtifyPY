@@ -1,0 +1,10 @@
+flask==2.3.3
+flask-cors==4.0.0
+flask-jwt-extended==4.5.3
+pymongo==4.5.0
+bcrypt==4.0.1
+python-dotenv==1.0.0
+opencv-python==4.8.1.78
+mediapipe==0.10.0
+numpy==1.24.3
+Pillow==10.0.0

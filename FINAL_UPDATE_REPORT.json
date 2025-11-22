@@ -1,0 +1,20 @@
+{
+  "zip_path": "/mnt/data/ARtify_project_with_models_and_ts.zip",
+  "models_copied": [
+    "/mnt/data/ARtify/frontend/public/models/aviator_sunglasses.glb",
+    "/mnt/data/ARtify/frontend/public/models/bimbo_thicc_earring.glb",
+    "/mnt/data/ARtify/frontend/public/models/nazi_hat.glb"
+  ],
+  "models_not_found": [],
+  "placeholders_replaced_count": 0,
+  "replacements_done_examples": [],
+  "eslint_prettier_added": "/mnt/data/ARtify/.eslintrc.json",
+  "prettier_config": "/mnt/data/ARtify/.prettierrc",
+  "tsconfig": "/mnt/data/ARtify/tsconfig.json",
+  "typescript_files_added": [
+    "frontend/src/main.tsx",
+    "frontend/src/App.tsx"
+  ],
+  "auto_fixed_files_count": 0,
+  "auto_fixed_files_examples": []
+}
